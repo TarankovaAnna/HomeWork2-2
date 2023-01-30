@@ -6,13 +6,13 @@ public class Main {
         int finalAccount;
         int bonus;
 
-        if (deposit > 1000) {
+        if (deposit > 1_000) {
             bonus = deposit / 100;
-            finalAccount = account + deposit;
         } else {
             bonus = 0;
-            finalAccount = account + deposit;
         }
+
+        finalAccount = account + deposit;
         System.out.println("Итоговый счет:" + finalAccount);
         System.out.println("Начислено бонусных рублей:" + bonus);
     }
